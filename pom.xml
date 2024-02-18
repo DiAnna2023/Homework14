@@ -16,9 +16,21 @@
         <appium.version>7.3.0</appium.version>
         <aeonbits.version>1.0.12</aeonbits.version>
         <assertJ.version>3.22.0</assertJ.version>
+        <appium.version>7.3.0</appium.version>
+        <aeonbits.version>1.0.12</aeonbits.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${appium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${aeonbits.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>

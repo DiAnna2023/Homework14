@@ -20,4 +20,18 @@ public class ArticleService {
         return articlePage
                 .getArticleHeader();
     }
+
+    public void clickArticle() {
+        articlePage
+                .clickFirstArticle();
+    }
+
+    public void clickCardRead(){
+        articlePage
+                .clickElementcardRead();
+    }
+    public void clickValentineArticle(){
+        articlePage
+                .clickValentineArticle();
+    }
 }
