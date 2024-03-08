@@ -8,7 +8,6 @@ public class SearchService {
 
     public void searchTest(String text) {
         searchPage.clickOnSearchField()
-                .fillInput("Appium");
+                .fillInput(text);
     }
-
 }

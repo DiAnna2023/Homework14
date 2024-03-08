@@ -9,29 +9,24 @@ public class ArticleService {
     public String getArticleName() {
         return articlePage
                 .clickFirstArticle()
+                .clickHeader()
                 .getArticleName();
     }
 
-    public ArticlePage getArticle(){
-        return articlePage
-                .clickFirstArticle();
-    }
-    public String getArticleHeader(){
-        return articlePage
-                .getArticleHeader();
-    }
-
-    public void clickArticle() {
+    public void goToArticle(){
         articlePage
-                .clickFirstArticle();
+                .swipeToArticle()
+                .clickFeaturedArticle()
+                .popUpSkip();
     }
-
-    public void clickCardRead(){
+    public void saveImage(){
         articlePage
-                .clickElementcardRead();
+                .downloadPicture();
     }
-    public void clickValentineArticle(){
+    public void deleteList(){
         articlePage
-                .clickValentineArticle();
+                .clickThreeDot()
+                .clickDeleteList()
+                .confirmDeletion();
     }
 }
